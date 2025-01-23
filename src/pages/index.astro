@@ -5,17 +5,20 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout>
-  <!-- <Image
-    src={profileImage}
-    alt='profile picture'
-    width={200}
-    height={200}
-    class='rounded-full'
-  /> -->
-  <div class='max-w-3xl'>
-    Hi, my name is Jacob Godwin! I'm a web developer based in Gainesville, FL. I
-    currently <a class='italic underline' href='work'>work</a> at the University
-    of Florida, where I'm focused on developing useful, user-centered web and mobile
-    applications for students, faculty, staff, and applicants.
-  </div>
+  <main class='flex gap-4 items-center justify-center'>
+    <div class='max-w-xl'>
+      Hi, my name is Jacob Godwin! I'm a web developer based in Gainesville, FL.<br
+      /><br />
+      I currently <a class='underline hover:text-[#ccd5ae]' href='work'>work</a>
+      at the University of Florida, where I'm focused on developing useful, user-centered
+      web and mobile applications for students, faculty, and staff.
+    </div>
+    <Image
+      src={profileImage}
+      alt='profile picture'
+      width={200}
+      height={200}
+      class='rounded-full'
+    />
+  </main>
 </BaseLayout>

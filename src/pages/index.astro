@@ -1,11 +1,21 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Image from 'astro/components/Image.astro'
+import profileImage from '../assets/profile.png'
+import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout>
+  <!-- <Image
+    src={profileImage}
+    alt='profile picture'
+    width={200}
+    height={200}
+    class='rounded-full'
+  /> -->
+  <div class='max-w-3xl'>
+    Hi, my name is Jacob Godwin! I'm a web developer based in Gainesville, FL. I
+    currently <a class='italic underline' href='work'>work</a> at the University
+    of Florida, where I'm focused on developing useful, user-centered web and mobile
+    applications for students, faculty, staff, and applicants.
+  </div>
+</BaseLayout>

@@ -1,0 +1,20 @@
+---
+import Nav from '../components/Nav.astro'
+
+const { title = 'Jacob Godwin - Web Developer' } = Astro.props
+---
+
+<!doctype html>
+<html lang='en' class='font-prime'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class='w-full flex flex-col justify-center items-center border px-6'>
+    <Nav />
+    <slot />
+  </body>
+</html>

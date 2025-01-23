@@ -1,0 +1,15 @@
+---
+const links = ['Home', 'Work']
+---
+
+<nav>
+  <ol class='flex gap-8'>
+    {
+      links.map((link) => (
+        <li>
+          <a href={link === 'Home' ? '/' : link.toLowerCase()}>{link}</a>
+        </li>
+      ))
+    }
+  </ol>
+</nav>

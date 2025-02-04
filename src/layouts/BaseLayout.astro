@@ -18,17 +18,19 @@ const {
   <head>
     <meta charset='UTF-8' />
     <meta name='description' content={description} />
-    <meta name='viewport' content='width=device-width' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class='min-h-screen items-center flex flex-col'>
+  <body class='min-h-screen grid grid-cols-4 grid-rows-[auto_1fr_auto]'>
     <Nav />
-    <main class='flex'>
-      <Sidebar />
-      <slot />
+    <main class='col-span-3'>
+      <div>
+        <slot />
+      </div>
     </main>
+    <Sidebar />
   </body>
 </html>

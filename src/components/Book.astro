@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string
+  author: string
+  styles?: string
+}
+
+const { title, author, styles } = Astro.props
+---
+
+<dl class=`flex flex-col items-center ${styles}`>
+  <dt class='italic text-wrap'>{title}</dt>
+  <span>by</span>
+  <dt>{author}</dt>
+</dl>

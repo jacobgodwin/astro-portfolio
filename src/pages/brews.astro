@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+const brews = await getCollection('brews')
+---
+
+<BaseLayout title='Brews - Jacob Godwin'>
+  <div class='flex flex-col gap-4 items-center justify-center'>
+    <svg
+      width='19'
+      height='19'
+      viewBox='0 0 19 19'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M14 10H1V14C1 16.2091 2.79086 18 5 18H10C12.2091 18 14 16.2091 14 14V10ZM14 10H16C17.1046 10 18 10.8954 18 12V13C18 14.1046 17.1046 15 16 15H14M9.99999 7C9.99999 7 11 6 10.5 5L9.49999 3C8.99998 2 9.99999 1 9.99999 1M5.64001 7C5.64001 7 6.64 6 6.14001 5L5.14001 3C4.63999 2 5.64001 1 5.64001 1'
+        stroke='currentColor'
+        stroke-width='1.5'
+        stroke-linecap='round'
+        stroke-linejoin='round'></path>
+    </svg>
+
+    <div class='flex flex-col justify-start items-start gap-2'>
+      {
+        brews.map((brew) => {
+          return (
+            <div class='flex flex-col'>
+              <span>{`${brew.data.date} at ${brew.data.time}`}</span>
+              <span>{`Beans: ${brew.data.beans}`}</span>
+              <span>{`Roaster: ${brew.data.roaster}`}</span>
+            </div>
+          )
+        })
+      }
+    </div>
+  </div>
+</BaseLayout>
+
+<style></style>

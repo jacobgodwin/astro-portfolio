@@ -2,6 +2,7 @@
 import Nav from '../components/Nav.astro'
 import { ClientRouter } from 'astro:transitions'
 import Sidebar from '../components/Sidebar.astro'
+import Footer from '../components/Footer.astro'
 interface Props {
   title: string
   description?: string
@@ -24,7 +25,7 @@ const {
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class='min-h-screen grid grid-cols-4 grid-rows-[auto_1fr_auto]'>
+  <body class='min-h-screen grid grid-cols-4 px-10 font-oldstyle'>
     <Nav />
     <main class='col-span-3'>
       <div>
@@ -32,5 +33,6 @@ const {
       </div>
     </main>
     <Sidebar />
+    <Footer />
   </body>
 </html>

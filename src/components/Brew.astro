@@ -10,7 +10,7 @@ interface Props {
 const { date, time, beans, roaster, styles } = Astro.props
 ---
 
-<dl class=`flex flex-col ${styles}`>
+<dl class=`flex flex-col ${styles} items-center`>
   <dt class='underline'>{`${date} at ${time}`}</dt>
   <dt class='italic'>{beans}</dt>
   <dt class='font-bold'>{roaster}</dt>

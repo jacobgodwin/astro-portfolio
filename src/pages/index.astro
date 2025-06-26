@@ -5,7 +5,9 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout title='Jacob Godwin - Web Developer'>
-  <main class='flex gap-10 items-start justify-center'>
+  <main
+    class='flex gap-10 items-start justify-center max-sm:flex-col max-sm:items-center'
+  >
     <Image
       src={profileImage}
       alt='profile picture'
@@ -35,7 +37,11 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         href='brews'
         target='_blank'>coffee</a
       > in hand.<br /><br />
-      If you'd like to link-up, feel free to reach out!
+      If you'd like to link-up, feel free to <a
+        class='underline underline-offset-4 hover:text-[#ccd5ae]'
+        href='https://www.linkedin.com/in/jacobpgodwin/'
+        target='_blank'>reach out!</a
+      >
     </p>
   </main>
 </BaseLayout>

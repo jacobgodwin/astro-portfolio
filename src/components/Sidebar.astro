@@ -7,7 +7,9 @@ import Brew from './Brew.astro'
 const brews = await getCollection('brews')
 ---
 
-<aside class='flex flex-col justify-start items-center min-w-[15%]'>
+<aside
+  class='flex flex-col justify-start items-center min-w-[15%] max-lg:hidden'
+>
   <a href='brews' class='flex flex-col items-center justify-center gap-4'>
     <Coffee height={34} width={34} />
     {

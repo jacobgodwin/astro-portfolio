@@ -1,4 +1,9 @@
 ---
+import GithubLogo from 'phosphor-astro/GithubLogo.astro'
+import LinkedinLogo from 'phosphor-astro/LinkedinLogo.astro'
+import InstagramLogo from 'phosphor-astro/InstagramLogo.astro'
+import GoodreadsLogo from 'phosphor-astro/GoodreadsLogo.astro'
+
 const currentDate = new Date().getFullYear()
 ---
 
@@ -6,37 +11,52 @@ const currentDate = new Date().getFullYear()
   <ul class='flex items-center gap-6 pt-10'>
     <li>
       <a
-        class='underline underline-offset-8 hover:text-[#ccd5ae]'
+        class='underline underline-offset-8 hover:text-[#ccd5ae] max-lg:hidden'
         href='https://github.com/jacobgodwin'
         target='_blank'>GitHub</a
       >
+      <a
+        class='underline underline-offset-8 hover:text-[#ccd5ae] lg:hidden'
+        href='https://github.com/jacobgodwin'
+        target='_blank'
+      >
+        <GithubLogo height={30} width={30} />
+      </a>
     </li>
     <li>
       <a
-        class='underline underline-offset-8 hover:text-[#ccd5ae]'
+        class='underline underline-offset-8 hover:text-[#ccd5ae] max-lg:hidden'
         href='https://www.linkedin.com/in/jacobpgodwin/'
         target='_blank'>LinkedIn</a
       >
-    </li>
-    <li>
       <a
-        class='underline underline-offset-8 hover:text-[#ccd5ae]'
-        href='https://bsky.app/profile/jacobgodwin.dev'
-        target='_blank'>Bluesky</a
+        class='underline underline-offset-8 hover:text-[#ccd5ae] lg:hidden'
+        href='https://www.linkedin.com/in/jacobpgodwin/'
+        target='_blank'><LinkedinLogo height={30} width={30} /></a
       >
     </li>
     <li>
       <a
-        class='underline underline-offset-8 hover:text-[#ccd5ae]'
+        class='underline underline-offset-8 hover:text-[#ccd5ae] max-lg:hidden'
         href='https://www.instagram.com/jacobgodwin04/'
         target='_blank'>Instagram</a
       >
+      <a
+        class='underline underline-offset-8 hover:text-[#ccd5ae] lg:hidden'
+        href='https://www.instagram.com/jacobgodwin04/'
+        target='_blank'><InstagramLogo height={30} width={30} /></a
+      >
     </li>
     <li>
       <a
-        class='underline underline-offset-8 hover:text-[#ccd5ae]'
+        class='underline underline-offset-8 hover:text-[#ccd5ae] max-lg:hidden'
         href='https://www.goodreads.com/user/show/14930230-jacob-godwin'
         target='_blank'>Goodreads</a
+      >
+      <a
+        class='underline underline-offset-8 hover:text-[#ccd5ae] lg:hidden'
+        href='https://www.goodreads.com/user/show/14930230-jacob-godwin'
+        target='_blank'><GoodreadsLogo height={30} width={30} /></a
       >
     </li>
     <li class='whitespace-nowrap ml-auto'>

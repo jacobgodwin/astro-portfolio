@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content'
-import { Client } from '@notionhq/client'
+import { Client, isFullPageOrDatabase } from '@notionhq/client'
 import { format, isToday, isYesterday } from 'date-fns'
 
 const brews = defineCollection({
@@ -36,35 +36,4 @@ const brews = defineCollection({
   }),
 })
 
-const books = defineCollection({
-  loader: async () => {
-    const notion = new Client({ auth: import.meta.env.NOTION_TOKEN })
-
-    const data = await notion.databases.query({
-      database_id: import.meta.env.LIB_DATABASE_ID,
-      filter: {
-        property: 'Status',
-        select: {
-          equals: 'Currently Reading',
-        },
-      },
-    })
-
-    console.log(JSON.stringify(data.results, null, 2))
-
-    return data.results.map((page: any) => {
-      return {
-        id: page.id,
-        title: page.properties.Title.title[0].plain_text,
-        author: page.properties.Author.rich_text[0].plain_text,
-      }
-    })
-  },
-  schema: z.object({
-    id: z.string(),
-    title: z.string(),
-    author: z.string(),
-  }),
-})
-
-export const collections = { brews, books }
+export const collections = { brews }

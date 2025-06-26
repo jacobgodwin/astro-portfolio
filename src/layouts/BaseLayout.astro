@@ -3,6 +3,7 @@ import Nav from '../components/Nav.astro'
 import { ClientRouter } from 'astro:transitions'
 import Sidebar from '../components/Sidebar.astro'
 import Footer from '../components/Footer.astro'
+import '@fontsource/atkinson-hyperlegible'
 interface Props {
   title: string
   description?: string
@@ -15,7 +16,7 @@ const {
 ---
 
 <!doctype html>
-<html lang='en' class='font-prime bg-[#1c1c1c] text-white'>
+<html lang='en' class='font-prime bg-neutral-900 text-white'>
   <head>
     <meta charset='UTF-8' />
     <meta name='description' content={description} />
@@ -25,14 +26,13 @@ const {
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class='min-h-screen grid grid-cols-4 px-10 font-oldstyle'>
+  <body class='flex flex-col justify-between min-h-screen p-10 font-atkinson'>
     <Nav />
-    <main class='col-span-3'>
-      <div>
-        <slot />
-      </div>
+    <main class='flex justify-between gap-20 flex-grow min-w-[70%]'>
+      <div class='min-w-[15%]'></div>
+      <slot />
+      <Sidebar />
     </main>
-    <Sidebar />
     <Footer />
   </body>
 </html>

@@ -1,17 +1,14 @@
 ---
 import { getCollection } from 'astro:content'
-import Coffee from 'phosphor-astro/Coffee.astro'
-import Waveform from 'phosphor-astro/Waveform.astro'
-import BookBookmark from 'phosphor-astro/BookBookmark.astro'
+import Coffee from 'phosphor-astro/CoffeeLight.astro'
+
 import Brew from './Brew.astro'
-import Book from './Book.astro'
 
 const brews = await getCollection('brews')
-const books = await getCollection('books')
 ---
 
-<aside class='flex flex-col items-center justify-center gap-10 col-start-4'>
-  <div class='flex flex-col items-center gap-4'>
+<aside class='flex flex-col justify-start items-center min-w-[15%]'>
+  <a href='brews' class='flex flex-col items-center justify-center gap-4'>
     <Coffee height={34} width={34} />
     {
       brews.slice(0, 1).map((brew) => {
@@ -21,24 +18,10 @@ const books = await getCollection('books')
             time={brew.data.time}
             beans={brew.data.beans}
             roaster={brew.data.roaster}
-            styles='text-sm gap-1'
+            styles='text-sm gap-1 items-center'
           />
         )
       })
     }
-  </div>
-  <div class='flex flex-col items-center gap-6 max-w-48'>
-    <BookBookmark height={34} width={34} />
-    {
-      books.map((book) => {
-        return (
-          <Book
-            title={book.data.title}
-            author={book.data.author}
-            styles='text-sm gap-1'
-          />
-        )
-      })
-    }
-  </div>
+  </a>
 </aside>

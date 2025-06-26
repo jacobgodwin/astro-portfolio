@@ -11,7 +11,8 @@ export default {
         'P052',
         'serif',
       ],
+      atkinson: ['Atkinson Hyperlegible', 'serif'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }

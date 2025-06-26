@@ -5,22 +5,37 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout title='Jacob Godwin - Web Developer'>
-  <main class='flex gap-4 items-center justify-center'>
-    <div>
-      Hi, my name is Jacob Godwin! I'm a web developer based in Gainesville, FL.<br
-      /><br />
-      I currently <a class='underline hover:text-[#ccd5ae]' href='work'>work</a>
-      at the University of Florida, where I'm focused on developing useful, user-centered
-      web and mobile applications for students, faculty, and staff.
-    </div>
+  <main class='flex gap-10 items-start justify-center'>
     <Image
       src={profileImage}
       alt='profile picture'
-      width={200}
-      height={200}
-      widths={[150, 200]}
-      sizes={`(max-width: 720px) 150px`}
+      width={150}
+      height={150}
+      widths={[150, 100]}
+      sizes={`(max-width: 720px) 100px`}
       class='rounded-full'
     />
+    <p>
+      Hi, my name is Jacob Godwin! I'm a web developer based in Gainesville, FL.<br
+      /><br />
+      I currently <a
+        class='underline underline-offset-4 hover:text-[#ccd5ae]'
+        href='work'>work</a
+      >
+      at the University of Florida, where I'm focused on developing useful, user-centered
+      web and mobile applications for students, faculty, and staff.<br /><br />
+
+      When I'm not working, there's a good chance you can catch me reading a
+      <a
+        class='underline underline-offset-4 hover:text-[#ccd5ae]'
+        href='https://www.goodreads.com/user/show/14930230-jacob-godwin'
+        target='_blank'>book</a
+      > with a freshly brewed cup of <a
+        class='underline underline-offset-4 hover:text-[#ccd5ae]'
+        href='brews'
+        target='_blank'>coffee</a
+      > in hand.<br /><br />
+      If you'd like to link-up, feel free to reach out!
+    </p>
   </main>
 </BaseLayout>

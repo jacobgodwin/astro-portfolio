@@ -1,0 +1,30 @@
+---
+import '../styles/globals.css'
+import BaseLayout from './BaseLayout.astro'
+import Download from '../components/Download.astro'
+type Props = {
+  frontmatter: {
+    title: string
+    pdfLink: string
+    description?: string
+  }
+}
+
+const { title, pdfLink, description } = Astro.props
+  .frontmatter as Props['frontmatter']
+
+const { PDF_VIEW, FORCE_THEME = '' } = import.meta.env
+---
+
+<BaseLayout title={title}>
+  <article class='resume'>
+    {
+      !PDF_VIEW && (
+        <div class='not-prose flex justify-end'>
+          <Download href={pdfLink} />
+        </div>
+      )
+    }
+    <slot />
+  </article>
+</BaseLayout>

@@ -7,8 +7,8 @@ const brews = await getCollection('brews')
 ---
 
 <BaseLayout title='Brews - Jacob Godwin'>
-  <div class='flex flex-col justify-start items-start gap-5'>
-    <span>Past Brews:</span>
+  <div>Past Brews:</div>
+  <div class='flex flex-wrap justify-start items-start gap-10'>
     {
       brews.slice(1, brews.length).map((brew) => {
         return (

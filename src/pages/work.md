@@ -22,6 +22,8 @@ Driven by continuous learning and problem-solving, I excel in dynamic environmen
 
 #### Application Developer Analyst 1
 
+#### Oct 2022 - Present
+
 - Develop and maintain ONE.UF, the university's self-service portal, and the UF mobile application, serving over 85,000 students, faculty, and staff with essential academic and administrative services.
 - Build and optimize front-end applications using React, React Native, JavaScript, and TypeScript for web and mobile platforms.
 - Implement and maintain backend services with Node.js and Express, ensuring scalable and efficient APIs.
@@ -31,6 +33,8 @@ Driven by continuous learning and problem-solving, I excel in dynamic environmen
 - Follow agile development practices, participate in code reviews, and contribute to continuous integration and deployment (CI/CD) workflows.
 
 #### End User Computing Specialist 3
+
+#### Jan 2020 - Oct 2022
 
 - Serve in a hybrid End User Computing Specialist III / Business Analyst role within the Workspace Delivery Services team in Academic Technology.
 - Manage and maintain 1,000+ endpoints in campus labs/learning spaces, focusing on application deployment and onboarding, as well as process improvement.
@@ -44,6 +48,8 @@ Driven by continuous learning and problem-solving, I excel in dynamic environmen
 
 #### End User Computing Specialist 2
 
+#### Jun 2017 - Jan 2020
+
 - Provided tier 2 technical support, performing junior system administration and Exchange administration tasks while mentoring and training tier 1 technicians.
 - Consistently ranked as a top performer, closing 100+ tickets per month and receiving multiple 5-star reviews for exceptional service.
 - Delivered IT support to faculty, staff, and students, including C-suite executives and the University President, ensuring high-level users received prompt and effective assistance.
@@ -51,6 +57,8 @@ Driven by continuous learning and problem-solving, I excel in dynamic environmen
 - Assisted the University President and speechwriter with technical needs related to the commencement speech, ensuring seamless execution.
 
 #### End User Computing Specialist 1
+
+#### Mar 2015 - Jun 2017
 
 - Provided tier 1 technical support to faculty, staff, students, and C-suite executives, resolving IT issues across campus.
 - Delivered customer support through remote, phone, in-person, and email interactions, ensuring timely and effective issue resolution.

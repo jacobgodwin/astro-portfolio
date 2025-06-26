@@ -1,5 +1,9 @@
 ---
 const links = ['Home', 'Work', 'Brews']
+
+const currPath = Astro.url.pathname
+
+console.log(currPath)
 ---
 
 <header class='flex justify-center items-center pb-10'>
@@ -8,7 +12,12 @@ const links = ['Home', 'Work', 'Brews']
       {
         links.map((link) => (
           <li>
-            <a href={link === 'Home' ? '/' : link.toLowerCase()}>{link}</a>
+            <a
+              href={link === 'Home' ? '/' : link.toLowerCase()}
+              class={`hover:text-[#ccd5ae] ${link === 'Home' && currPath === '/' ? 'underline underline-offset-8 decoration-[#ccd5ae]' : currPath === `/${link.toLowerCase()}` ? 'underline underline-offset-8 decoration-[#ccd5ae]' : ''}`}
+            >
+              {link}
+            </a>
           </li>
         ))
       }

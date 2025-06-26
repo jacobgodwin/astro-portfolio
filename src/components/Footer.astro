@@ -7,8 +7,10 @@ import GoodreadsLogo from 'phosphor-astro/GoodreadsLogo.astro'
 const currentDate = new Date().getFullYear()
 ---
 
-<footer>
-  <ul class='flex items-center gap-6 pt-10'>
+<footer
+  class='flex justify-between items-center pt-10 flex-wrap max-sm:flex-col max-sm:gap-4'
+>
+  <ul class='flex items-center gap-6'>
     <li>
       <a
         class='underline underline-offset-8 hover:text-[#ccd5ae] max-lg:hidden'
@@ -59,11 +61,11 @@ const currentDate = new Date().getFullYear()
         target='_blank'><GoodreadsLogo height={30} width={30} /></a
       >
     </li>
-    <li class='whitespace-nowrap ml-auto'>
-      &#169; <a
-        class='underline underline-offset-8 hover:text-[#ccd5ae]'
-        href='work'>Jacob Godwin</a
-      >&nbsp;{currentDate}
-    </li>
   </ul>
+  <div>
+    &#169; <a
+      class='underline underline-offset-8 hover:text-[#ccd5ae]'
+      href='work'>Jacob Godwin</a
+    >&nbsp;{currentDate}
+  </div>
 </footer>

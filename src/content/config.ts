@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content'
-import { Client, isFullPageOrDatabase } from '@notionhq/client'
+import { Client } from '@notionhq/client'
 import { format, isToday, isYesterday } from 'date-fns'
 
 const brews = defineCollection({

@@ -2,7 +2,6 @@
 title: Resume - Jacob Godwin
 description: Resume about Jacob Godwin, a Software Developer at the University of Florida.
 layout: ../layouts/ResumeLayout.astro
-pdfLink: jacob_godwin_resume.pdf
 ---
 
 # Jacob Godwin

@@ -9,6 +9,8 @@ interface Props {
   description?: string
 }
 
+const pathname = Astro.url.pathname
+
 const {
   title,
   description = 'Pesonal portfolio website for Jacob Godwin, a web developer',
@@ -26,12 +28,13 @@ const {
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class='flex flex-col justify-between min-h-screen p-10 font-atkinson'>
+  <body class='flex flex-col items-center min-h-screen p-10 font-atkinson'>
     <Nav />
-    <main class='flex justify-between gap-20 flex-grow min-w-[70%]'>
-      <div class='min-w-[15%] max-lg:hidden'></div>
+    <main
+      class='flex justify-between flex-grow lg:max-w-[70%] max-lg:max-w-[100%]'
+    >
+      <!-- <div class='min-w-[15%] max-lg:hidden'></div> -->
       <slot />
-      <Sidebar />
     </main>
     <Footer />
   </body>

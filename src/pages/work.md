@@ -58,14 +58,14 @@ Driven by continuous learning and problem-solving, I excel in dynamic environmen
 
 ## Skills
 
-|                        |                     |               |
-| ---------------------- | ------------------- | ------------- |
-| React                  | React Native        | TypeScript    |
-| Expo                   | JavaScript          | Git/GitLab    |
-| CI/CD                  | SQL                 | Express       |
-| Node                   | Agile Methodologies | HTML/CSS      |
-| Material UI            | Figma               | Jest/Postman  |
-| Collaboration/Teamwork | Problem Solving     | Communication |
+|                        |                 |               |
+| ---------------------- | --------------- | ------------- |
+| React                  | React Native    | TypeScript    |
+| Expo                   | JavaScript      | Git/GitLab    |
+| CI/CD                  | SQL             | Express       |
+| Node                   | Agile           | HTML/CSS      |
+| Material UI            | Figma           | Jest/Postman  |
+| Collaboration/Teamwork | Problem Solving | Communication |
 
 ## Education
 

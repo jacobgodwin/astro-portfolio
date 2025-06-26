@@ -2,6 +2,7 @@
 const links = ['Home', 'Work', 'Brews']
 
 const currPath = Astro.url.pathname
+const isDev = Astro
 
 console.log(currPath)
 ---
@@ -14,7 +15,7 @@ console.log(currPath)
           <li>
             <a
               href={link === 'Home' ? '/' : link.toLowerCase()}
-              class={`hover:text-[#ccd5ae] ${link === 'Home' && currPath === '/' ? 'underline underline-offset-8 decoration-[#ccd5ae]' : currPath === `/${link.toLowerCase()}` ? 'underline underline-offset-8 decoration-[#ccd5ae]' : ''}`}
+              class={`hover:text-[#ccd5ae] ${link === 'Home' && currPath === '/' ? 'underline underline-offset-8 decoration-[#ccd5ae]' : currPath.replace(/^\/+|\/+$/g, '') === `${link.toLowerCase()}` ? 'underline underline-offset-8 decoration-[#ccd5ae]' : ''}`}
             >
               {link}
             </a>

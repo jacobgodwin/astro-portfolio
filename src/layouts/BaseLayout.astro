@@ -27,7 +27,6 @@ const {
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
     <ClientRouter />
-    <Analytics />
   </head>
   <body class='flex flex-col items-center min-h-screen p-10 font-atkinson'>
     <Nav />
@@ -35,6 +34,7 @@ const {
       class='flex justify-between flex-grow lg:max-w-[70%] max-lg:max-w-[100%]'
     >
       <slot />
+      <Analytics />
     </main>
     <Footer />
   </body>

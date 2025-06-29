@@ -25,6 +25,7 @@ const {
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
+    <Analytics />
     <title>{title}</title>
     <ClientRouter />
   </head>
@@ -34,7 +35,6 @@ const {
       class='flex justify-between flex-grow lg:max-w-[70%] max-lg:max-w-[100%]'
     >
       <slot />
-      <Analytics />
     </main>
     <Footer />
   </body>

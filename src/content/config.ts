@@ -1,3 +1,5 @@
+export const prerender = false
+
 import { defineCollection, z } from 'astro:content'
 import { Client } from '@notionhq/client'
 import { format, isToday, isYesterday } from 'date-fns'

@@ -11,8 +11,8 @@ const brews = defineCollection({
     })
 
     return data.results.slice(0, 10).map((page: any) => {
-      const today = isToday(page.created_time)
-      const yesterday = isYesterday(page.created_time)
+      const today = isToday(page.properties.Date.title[0].plain_text)
+      const yesterday = isYesterday(page.properties.Date.title[0].plain_text)
 
       return {
         id: page.id,
@@ -20,8 +20,8 @@ const brews = defineCollection({
           ? 'Today'
           : yesterday
           ? 'Yesterday'
-          : format(page.created_time, 'EE, MMM d'),
-        time: format(page.created_time, 'h:mm aa'),
+          : format(page.properties.Date.title[0].plain_text, 'EE, MMM d'),
+        time: format(page.properties.Date.title[0].plain_text, 'h:mm aa'),
         roaster: page.properties.Roaster_API.formula.string,
         beans: page.properties.Beans_API.formula.string,
       }

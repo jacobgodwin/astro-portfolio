@@ -22,6 +22,8 @@ Driven by continuous learning and problem-solving, I excel in dynamic environmen
 
 #### Application Developer Analyst 2
 
+#### June 2025 - Present
+
 - Continuing to develop for ONE.UF and the UF mobile application, supporting over 85,000 students, faculty, and staff with essential academic and administrative services.
 - Coordinate and oversee production code deployments for both web and mobile platforms, ensuring smooth releases and minimal downtime.
 - Implement and refine front-end solutions using React, React Native, JavaScript, and TypeScript across multiple devices and environments.
@@ -29,8 +31,6 @@ Driven by continuous learning and problem-solving, I excel in dynamic environmen
 - Mentor junior developers by conducting thorough code reviews, facilitating onboarding, and promoting team-wide best practices.
 - Partner with UX/UI designers to align technical execution with user-centered design goals and accessibility standards.
 - Influence team processes and CI/CD workflows to streamline development, testing, and deployment cycles in an agile environment.
-
-#### June 2025 - Present
 
 #### Application Developer Analyst 1
 

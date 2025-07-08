@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
-    "@astrojs/vercel": "^8.2.0",
+    "@astrojs/vercel": "^8.2.1",
     "@fontsource/atkinson-hyperlegible": "^5.1.1",
     "@fontsource/courier-prime": "^5.1.1",
     "@vercel/analytics": "^1.5.0",
-    "astro": "^5.10.1",
+    "astro": "^5.11.0",
     "date-fns": "^4.1.0",
     "jspdf": "^3.0.0",
     "phosphor-astro": "^2.1.0",

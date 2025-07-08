@@ -1,6 +1,5 @@
 ---
 import Nav from '../components/Nav.astro'
-import { ClientRouter } from 'astro:transitions'
 import Footer from '../components/Footer.astro'
 import '@fontsource/atkinson-hyperlegible'
 import Analytics from '@vercel/analytics/astro'
@@ -25,16 +24,11 @@ const {
     <meta name='generator' content={Astro.generator} />
     <Analytics />
     <title>{title}</title>
-    <ClientRouter />
   </head>
-  <body
-    class='flex flex-col items-center min-h-screen p-10 font-atkinson'
-    transition:animate='none'
-  >
+  <body class='flex flex-col items-center min-h-screen p-10 font-atkinson'>
     <Nav />
     <main
       class='flex justify-between flex-grow lg:max-w-[70%] max-lg:max-w-[100%]'
-      transition:animate='fade'
     >
       <slot />
     </main>

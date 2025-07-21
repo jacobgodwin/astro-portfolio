@@ -4,6 +4,9 @@
 @tailwind utilities;
 @plugin '@tailwindcss/typography';
 
+html {
+  @apply bg-neutral-900 text-white;
+}
 article.resume {
   @apply prose prose-neutral m-0
     max-w-full bg-neutral-800 px-12 py-8 pt-20 prose-invert prose-h1:text-3xl prose-h1:uppercase prose-h2:mb-3 prose-h2:mt-8 prose-h2:text-sm

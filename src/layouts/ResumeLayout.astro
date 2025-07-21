@@ -3,13 +3,14 @@ import BaseLayout from './BaseLayout.astro'
 type Props = {
   frontmatter: {
     title: string
+    description: string
   }
 }
 
-const { title } = Astro.props.frontmatter as Props['frontmatter']
+const { title, description } = Astro.props.frontmatter as Props['frontmatter']
 ---
 
-<BaseLayout title={title}>
+<BaseLayout title={title} description={description} scrollSmooth={false}>
   <article class='resume'>
     <slot />
   </article>

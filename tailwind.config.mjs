@@ -1,16 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ['media'],
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        sm: '100%',
+        md: '100%',
+        lg: '720px',
+        xl: '820px',
+      },
+      padding: '2rem',
+    },
     fontFamily: {
-      // https://github.com/system-fonts/modern-font-stacks
-      oldstyle: [
-        'Iowan Old Style',
-        'Palatino Linotype',
-        'URW Palladio L',
-        'P052',
-        'serif',
-      ],
       atkinson: ['Atkinson Hyperlegible', 'serif'],
     },
   },

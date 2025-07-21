@@ -1,29 +1,32 @@
 ---
-import { Image } from 'astro:assets'
-import profileImage from '../assets/profile.png'
-import BaseLayout from '../layouts/BaseLayout.astro'
+import { Picture } from 'astro:assets'
+import profileImage from '@/assets/profile.png'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+
+import '@/styles/globals.css'
 ---
 
-<BaseLayout title='Jacob Godwin - Web Developer'>
+<BaseLayout
+  title='Jacob Godwin - Software Engineer'
+  description='Simple portfolio site for Jacob Godwin'
+  scrollSmooth={false}
+>
   <main
-    class='flex gap-10 items-start justify-center max-sm:flex-col max-sm:items-center'
+    class='flex flex-grow gap-10 items-start justify-center max-md:flex-col max-md:items-center'
   >
-    <Image
+    <Picture
       src={profileImage}
+      layout='constrained'
+      width={250}
+      height={250}
       alt='profile picture'
-      width={150}
-      height={150}
-      widths={[100, 720]}
-      sizes={`(max-width: 720px) 100px, (max-width: 1600px) 720px`}
       class='rounded-full'
     />
     <p>
       Hi, my name is Jacob Godwin! I'm a web developer based in Gainesville, FL.<br
       /><br />
-      I currently <a
-        aria-label='Link to resume page'
-        class='underline underline-offset-4 hover:text-[#ccd5ae]'
-        href='/work'>work</a
+      I currently <a aria-label='Link to resume page' class='link' href='/work'
+        >work</a
       >
       at the University of Florida, where I'm focused on developing useful, user-centered
       web and mobile applications for students, faculty, and staff.<br /><br />
@@ -31,17 +34,23 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       When I'm not working, there's a good chance you can catch me reading a
       <a
         aria-label='External link to Goodreads profile'
-        class='underline underline-offset-4 hover:text-[#ccd5ae]'
+        class='link'
         href='https://www.goodreads.com/user/show/14930230-jacob-godwin'
         target='_blank'>book</a
       > with a freshly brewed cup of <a
         aria-label='Link to brews page'
-        class='underline underline-offset-4 hover:text-[#ccd5ae]'
+        class='link'
         href='/brews'>coffee</a
-      > in hand.<br /><br />
+      > in hand, or creating a <a
+        aria-label='Link to YouTube page'
+        class='link'
+        href='https://www.youtube.com/@JacobGodwin'
+        target='_blank'>highlight reel</a
+      > of recent outdoor adventures I've enjoyed with family and friends.<br
+      /><br />
       If you'd like to link-up, feel free to <a
         aria-label='External link to LinkedIn profile'
-        class='underline underline-offset-4 hover:text-[#ccd5ae]'
+        class='link'
         href='https://www.linkedin.com/in/jacobpgodwin/'
         target='_blank'>reach out!</a
       >

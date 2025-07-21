@@ -1,4 +1,5 @@
 ---
+import '@/styles/globals.css'
 interface Props {
   date: string
   time: string
@@ -11,7 +12,7 @@ const { date, time, beans, roaster, styles } = Astro.props
 ---
 
 <dl class=`flex flex-col ${styles} max-w-60`>
-  <dt class='underline underline-offset-4'>{`${date} at ${time}`}</dt>
+  <dt class='link'>{`${date} at ${time}`}</dt>
   <dt class='italic'>{beans}</dt>
   <dt class='font-bold'>{roaster}</dt>
 </dl>

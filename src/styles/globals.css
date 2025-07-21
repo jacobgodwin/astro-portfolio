@@ -5,7 +5,19 @@
 @plugin '@tailwindcss/typography';
 
 html {
-  @apply bg-neutral-900 text-white;
+  @apply bg-neutral-900 text-white font-atkinson;
+}
+
+a:hover {
+  color: #ccd5ae;
+}
+
+.social {
+  @apply underline underline-offset-8;
+}
+
+.link {
+  @apply underline underline-offset-4;
 }
 article.resume {
   @apply prose prose-neutral m-0

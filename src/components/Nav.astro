@@ -4,7 +4,7 @@ const links = ['Home', 'Work', 'Brews']
 const currPath = Astro.url.pathname
 ---
 
-<header class='flex justify-center items-center pb-10'>
+<header class='flex justify-center items-center py-10'>
   <nav>
     <ol class='flex gap-8'>
       {
@@ -12,7 +12,7 @@ const currPath = Astro.url.pathname
           <li>
             <a
               href={link === 'Home' ? '/' : link.toLowerCase()}
-              class={`hover:text-[#ccd5ae] ${link === 'Home' && currPath === '/' ? 'underline underline-offset-8 decoration-[#ccd5ae]' : currPath.replace(/^\/+|\/+$/g, '') === `${link.toLowerCase()}` ? 'underline underline-offset-8 decoration-[#ccd5ae]' : ''}`}
+              class={`${link === 'Home' && currPath === '/' ? 'underline underline-offset-8 decoration-[#ccd5ae]' : currPath.replace(/^\/+|\/+$/g, '') === `${link.toLowerCase()}` ? 'underline underline-offset-8 decoration-[#ccd5ae]' : ''}`}
             >
               {link}
             </a>

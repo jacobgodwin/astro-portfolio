@@ -8,8 +8,8 @@ Visit the site here: [https://jacobgodwin.dev](https://jacobgodwin.dev)
 
 ## Tech Stack
 
-- [Astro](https://astro.build/) – Static site generator
-- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
-- [Phosphor Icons](https://phosphoricons.com/) – Icon set for modern UI design
-- [Notion API](https://developers.notion.com/) – CMS backend for content
-- [TypeScript](https://www.typescriptlang.org/) – Optional static typing
+- [Astro](https://astro.build/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Iconfiy](https://icon-sets.iconify.design/)
+- [Notion API](https://developers.notion.com/)
+- [TypeScript](https://www.typescriptlang.org/)

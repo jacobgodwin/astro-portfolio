@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['media'],
@@ -12,9 +14,6 @@ export default {
         xl: '820px',
       },
       padding: '2rem',
-    },
-    fontFamily: {
-      atkinson: ['Atkinson Hyperlegible', 'serif'],
     },
   },
   plugins: [require('@tailwindcss/typography')],

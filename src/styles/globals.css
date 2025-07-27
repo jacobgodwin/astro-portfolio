@@ -4,7 +4,7 @@
 @plugin '@tailwindcss/typography';
 html {
   @apply bg-neutral-900 text-white;
-  font-family: 'AtkinsonHyperlegibleNextVF-Variable', sans-serif;
+  font-family: 'Atkinson Hyperlegible Next', sans-serif;
 }
 
 a:hover {

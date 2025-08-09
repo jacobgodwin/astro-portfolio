@@ -62,9 +62,17 @@ const {
     <Analytics />
     <ClientRouter />
   </head>
-  <body class='antialiased w-full h-screen flex flex-col items-center'>
+  <body
+    class='antialiased w-full h-screen flex flex-col items-center'
+    transition:animate='none'
+  >
     <Nav />
-    <main class='flex flex-col flex-grow container' role='main' id='top'>
+    <main
+      class='flex flex-col flex-grow container'
+      role='main'
+      id='top'
+      transition:animate='initial'
+    >
       <slot />
     </main>
     <Footer />

@@ -30,7 +30,10 @@ const {
 ---
 
 <!doctype html>
-<html lang={SITE.lang ?? 'en'} class={cn({ 'scroll-smooth': scrollSmooth })}>
+<html
+  lang={SITE.lang ?? 'en'}
+  class={cn('dark', { 'scroll-smooth': scrollSmooth })}
+>
   <head>
     <meta name='msapplication-TileColor' content='#171717' />
     <meta name='viewport' content='width=device-width' />

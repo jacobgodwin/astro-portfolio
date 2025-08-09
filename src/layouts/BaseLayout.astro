@@ -1,5 +1,4 @@
 ---
-import { ClientRouter } from 'astro:transitions'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
 
@@ -60,19 +59,10 @@ const {
 
     <title>{title}</title>
     <Analytics />
-    <ClientRouter />
   </head>
-  <body
-    class='antialiased w-full h-screen flex flex-col items-center'
-    transition:animate='none'
-  >
+  <body class='antialiased w-full h-screen flex flex-col items-center'>
     <Nav />
-    <main
-      class='flex flex-col flex-grow container'
-      role='main'
-      id='top'
-      transition:animate='initial'
-    >
+    <main class='flex flex-col flex-grow container' role='main' id='top'>
       <slot />
     </main>
     <Footer />

@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/rebuild.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/rebuild",
+      "schedule": "0 0 * * 0"
+    }
+  ]
+}

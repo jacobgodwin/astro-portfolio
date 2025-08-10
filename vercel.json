@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/rebuild.js": {
+    "api/rebuild.ts": {
       "runtime": "vercel/node@22.x"
     }
   },

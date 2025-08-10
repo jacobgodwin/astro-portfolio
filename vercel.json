@@ -1,12 +1,8 @@
 {
-  "functions": {
-    "api/rebuild.ts": {
-      "runtime": "nodejs"
-    }
-  },
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "crons": [
     {
-      "path": "/api/rebuild",
+      "path": "/api/cron",
       "schedule": "0 0 * * 0"
     }
   ]

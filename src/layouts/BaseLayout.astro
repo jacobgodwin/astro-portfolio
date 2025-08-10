@@ -63,9 +63,9 @@ const {
     <title>{title}</title>
     <Analytics />
   </head>
-  <body class='antialiased w-full h-screen flex flex-col items-center'>
+  <body class={cn('antialiased w-full h-screen flex flex-col items-center')}>
     <Nav />
-    <main class='flex flex-col flex-grow container' role='main' id='top'>
+    <main class={cn('flex flex-col flex-grow container')} role='main' id='top'>
       <slot />
     </main>
     <Footer />

@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/rebuild.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "vercel/node@22.x"
     }
   },
   "crons": [
